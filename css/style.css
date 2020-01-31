@@ -331,6 +331,7 @@ a:focus, a:hover {
   color: #232323;
   text-transform: capitalize;
   margin-bottom: 8px;
+  margin-top: 15px;
   font-weight: 700;
 }
 
@@ -1506,4 +1507,8 @@ a:focus, a:hover {
   -moz-box-shadow: 0 0 40px #fbff07;
   -webkit-box-shadow: 0 0 40px #fbff07;
   box-shadow: 0 0 40px #fbff07;
+}
+
+#skillIcons {
+  font-size: 7rem;
 }
