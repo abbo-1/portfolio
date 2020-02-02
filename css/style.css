@@ -1515,8 +1515,32 @@ a:focus, a:hover {
 
 .contactLogos {
   width: 32px;
+  margin-bottom: 5px;
+}
+
+.contactHeader {
+  margin-bottom: 20px;
 }
 
 .linkButtons {
-  
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 2px solid #232323;
+  background-color: #fbff07;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+a:link {
+  color: #232323;
+}
+
+a:hover {
+  background-color: #f0326b;
+}
+
+.plainContactText {
+  margin-top: 15px;
 }
