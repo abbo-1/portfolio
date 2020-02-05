@@ -1600,9 +1600,9 @@ a.linkButtons:hover {
 
 .overlay {
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%); */
   }
 
 #bodyAbout {
@@ -1623,4 +1623,6 @@ a.linkButtons:hover {
   border: 7px solid #212529;
   border-radius: 10px;
   padding: 3px;
+  margin-bottom: 50px;
+  text-align: center;
 }
