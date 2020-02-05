@@ -7,7 +7,7 @@ body {
 
 p {
   font-family: "Titillium Web", sans-serif;
-  color: #9a9a9a;
+  color: #000000;
   font-size: 25px;
 }
 
@@ -1550,81 +1550,77 @@ a.linkButtons:hover {
 
 /* HOVER EFFECT */
 
-.hovereffect {
-  width: 100%;
-  height: 100%;
-  float: left;
-  overflow: hidden;
+.hoverEffect {
+  cursor: pointer;
+  height: 540px;
   position: relative;
-  text-align: center;
-  cursor: default;
-}
-
-.hovereffect .overlay {
+  overflow: hidden;
+  width: 540px;
+  text-align:center;
+  }
+  .hoverEffect .overlay {
+  background-color: #212529;
   position: absolute;
-  overflow: hidden;
+  top: 0;
+  left: 0;
+  color: #fff;
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
   opacity: 0;
-  filter: alpha(opacity=0);
-  width: 55%;
-  height: 81%;
-  left: 22%;
-  top: 10%;
-  border-radius: 80%;
-  border: 2px solid #FFF;
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(50%,50%,0);
-  transform: translate3d(50%,50%,0);
-}
-
-.hovereffect:hover .overlay {
-  background-color:#6c706d;
-}
-
-.hovereffect img {
-  display: block;
-  position: relative;
-  -webkit-transition: all 0.35s;
-  transition: all 0.35s;
-}
-
-.hovereffect:hover img {
-  filter: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="filter"><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="linear" slope="1.4" /><feFuncG type="linear" slope="1.4" /><feFuncB type="linear" slope="1.4" /></feComponentTransfer></filter></svg>#filter');
-  filter: brightness(1.4);
-  -webkit-filter: brightness(1.4);
-}
-
-.hovereffect h2 {
+  width: 360px;
+  height: 100px;
+  padding: 130px 20px;
+  }
+  .hoverEffect:hover .overlay { opacity: 0.8; }
+  .hoverEffect .overlayText {
+  -webkit-transition: all 300ms ease-out;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -ms-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  transform: translateY(30px);
+  -webkit-transform: translateY(30px);
+  }
+  .hoverEffect .overlayText {
+  font-size: 2.5em;
   text-transform: uppercase;
-  text-align: center;
-  position: relative;
-  font-size: 17px;
-  padding: 10px;
-  background-color: transparent;
-  color: #FFF;
-  padding: 1em 0;
   opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-150%,-400%,0);
-  transform: translate3d(-150%,-400%,0);
-}
-
-.hovereffect a, .hovereffect p {
-  color: #FFF;
-  padding: 1em 0;
-  opacity: 0;
-  filter: alpha(opacity=0);
-  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-  transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(-150%,-400%,0);
-  transform: translate3d(-150%,-400%,0);
-}
-
-.hovereffect:hover a, .hovereffect:hover p, .hovereffect:hover h2, .hovereffect:hover .overlay {
+  transition-delay: 0.2s;
+  transition-duration: 0.3s;
+  }
+  .hoverEffect:hover .overlayText,
+  .hoverEffect:focus .overlayText {
   opacity: 1;
-  filter: alpha(opacity=100);
-  -webkit-transform: translate3d(0,0,0);
-  transform: translate3d(0,0,0);
+  transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  }
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+#bodyAbout {
+  background-image: url('../images/hexagonBackground.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.aboutInfo {
+  background: white;
+  border: 7px solid #212529;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.aboutInfoTitle {
+  background: white;
+  border: 7px solid #212529;
+  border-radius: 10px;
+  padding: 3px;
 }
