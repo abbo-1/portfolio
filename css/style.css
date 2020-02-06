@@ -61,14 +61,18 @@ a:focus, a:hover {
   letter-spacing: 1px;
   padding: 10px 40px;
   text-transform: uppercase;
-  border: 1px solid transparent;
+  border: 2px solid #fbff07;
   border-radius: 2px;
   cursor: pointer;
 }
 
-.btn-main:hover, .btn-main-sm:hover {
+.btn-main:hover {
+  -moz-box-shadow: 0 0 40px #fbff07;
+  -webkit-box-shadow: 0 0 40px #fbff07;
+  box-shadow: 0 0 40px #fbff07;
   color: #fff;
 }
+
 
 .btn-main-sm {
   padding: 8px 20px;
@@ -1194,4 +1198,10 @@ a.linkButtons:hover {
   padding: 3px;
   margin-bottom: 50px;
   text-align: center;
+}
+
+.btn-main:hover {
+  -moz-box-shadow: 0 0 40px #fbff07;
+  -webkit-box-shadow: 0 0 40px #fbff07;
+  box-shadow: 0 0 40px #fbff07;
 }
