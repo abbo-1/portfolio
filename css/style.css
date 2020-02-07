@@ -1074,11 +1074,11 @@ a:focus, a:hover {
   height:auto;
 }
 
-#indexPhoto:hover {
+/* #indexPhoto:hover {
   -moz-box-shadow: 0 0 40px #fbff07;
   -webkit-box-shadow: 0 0 40px #fbff07;
   box-shadow: 0 0 40px #fbff07;
-}
+} */
 
 #skillIcons {
   font-size: 7rem;
